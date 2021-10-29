@@ -1,11 +1,12 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 func emptyStructPointer() {
 	// pointers to empty structs are not equal,
 	// until you print them.
-
 	p1 := &struct{}{}
 	p2 := new(struct{})
 	p3 := new(struct{})
